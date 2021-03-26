@@ -35,7 +35,7 @@ class GeoAddress(object):
     '''
 
     def __init__(self, poitype='ALL', output='JSON', radius=1000, extensions='all', batch=False, roadlevel='1', homeorcorp=0):
-        self.parameters = 'http://restapi.amap.com/v3/geocode/regeo?key=6560e81381db257f1cc892a7efb0ea9e&poitype=%s&output=%s&radius=%d&extensions=%s&batch=%s&roadlevel=%s&homeorcorp=%d' % (
+        self.parameters = 'http://restapi.amap.com/v3/geocode/regeo?key=&poitype=%s&output=%s&radius=%d&extensions=%s&batch=%s&roadlevel=%s&homeorcorp=%d' % (
             poitype, output, radius, extensions, batch, roadlevel, homeorcorp)
         self.output = output
 
